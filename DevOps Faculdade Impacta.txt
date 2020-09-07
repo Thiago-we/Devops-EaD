@@ -1,0 +1,76 @@
+Faculdade Impacta - Ambiente de Desenvolvimento(DevOps)
+Prof. Vanderson Gomes Bossi
+
+Aula 1
+Introdução - DevOps
+Prof. Renato Seixas - 
+email: renato.esteves@faculdadeimpacta.com.br
+linkedin - rseixas
+
+O que é DevOps?
+Combinação de filosofias culturais, práticas e ferramentas que aumentam a capacidade de uma empresa de distribuir aplicativos e serviços em alta velocidade.(Amazon)
+
+Conjunto de principios, práticas e produtos, que visa ajudar organizações a entregar software de alta qualidade para o mercado de forma mais rápida e ao mesmo tempo minimizar custos e riscos(IBM)
+
+DevOps é mais uma tecnologia. Trata-se de uma idéia que exige evolução cultural. São as pessoas, os processos e as ferramentas certas para agilizar o ciclo de vida do aplicativo e torna-lo previsivel (Microsoft)
+
+#Aula 2: Gerenciamento de código fonte
+Code: Sincronizar/Histórico/Controle
+#Controle de versão: Registra todas as mudanças feitas ao longo do tempo. Gerenciamento do histórico de todas as modificações realizadas nos artefatos de um projeto.
+#Tipos de sistemas de controle(Locais, Centralizados, Distribuidos)
+#Sistemas de controle de versao local: permite registro de mudança em uma máquina(local). Parece ultrapassado, mas muitos OSs usam para controle de pacotes além de algumas IDEs - como Eclipse. Não colaborativo.
+#Sistemas de controle de versão centralizado: Trabalhar em conjunto com outros desenvolvedores. Unico servidore central. administrador tem controle especifico de que o fez o que. Depende do servidor, se eke falhar, todo o processo de desenvolvimento falha (indisponibilidade, backup, histórico).
+#Sistema de controle de versão distribuido: Os clientes não só tem a cópia dos últimos arquivos, mas sim a cópia de todo o repositório. Existe um server, mas, como todos possume uma cópias a informação, não está centralizada. Permite múltiplos times.
+
+#Arvóres de versões: branch/commiti/trunk/master branch
+fonte:http://www.drupal.org/node/991716
+#Gerenciadores de versão: Comerciais - Microsoft Source Control - Microsoft Visual SourceSafe - IBM Rational Team Concert - IBM Ration Clear CaSe - GRATUITOS - SVN, Subversion e Git.
+
+#Aula 3 - Gerenciamento de Código Fonte Distribuido
+Commit - Registro de modificações no histórico
+Branch - Histórico de modificações que se originam de outro histórico.
+Merge - Incorporação das modificações de uma branch em outra.
+#As modificações feitas na branch 1 e branch 2 não afetaram a master
+
+#Material de estudo no site: -http://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Fluxos-de-Trabalhp-com-Branches
+
+#Lives sobre devolps; A disciplina nasceu a partir da Engenharia de Software.
+Processo de produção de software: Análise, Design, Codificação, Teste, Operação.
+#Análise: entendimentos das necessidades e especificação do que o produto deve fazer. Principal desafio é entender o que realmente o cliente deseja..(metodologias ágeis); Design, Codificação, Teste e Operação.
+
+#Design: definição da estrutura e dos componentes do produto para atender as especificações(Computação em Nuvem);
+
+#Codificação: implementação dos componentes em uma ou várias linguagens de programação (a metodologia ágil SCRUM vai até aqui);
+
+#Teste: verificação de que a implementação atende o que foi especificado (produtividade x qualidade);
+
+#Operação: implatação/instalação do que foi desenvolvido para que possa ser utilizado e acompanhamento desta utilização.
+
+#Equipes envolvidas: Podemos agrupar as equipes em dois grandes grupos: Desenvolvimento e Operação:
+
+#Ambientes envolvidos: Por ambiente podemos entender o conjunto de configurações/instalações presentes em uma máquina física ou virtual; eles podem ser classificados segundo a sua funcionalidade: Desenvolvimento, Homologação, Produção.
+
+#Gestão de Mudança: Mudanças sempre ocorrerão, novas versões, correções de bugs, mudanças de regras de negócio, etc; A gestão deve garantir wue toda e qualquer alteração do ambiente será devidamente planejada, autorizada, comunicada e documentada; Deve-se garantir que a operação do cliengte final não seja afetada.
+
+#Gestão da Mudança - Antecedentes; A gestão era completamente informal, a data e hora da implantação eram definidas, sem muitos critérios, pela Operação. Os resultados começaram a ser desastrosos... A solução encontrada foi dar super poderes a alguém da Operação para decidir o que entra ou não na produção.
+
+#Gestão da Mudança - Desafios: O surgimento e a popularização dos aplicativos online iniciou uma nova cultura na internet. O usuario está constantemente procurando por novidades e inovações nos serviços que utiliza.
+#OBS: As empresas precisam modificar constantemente os serviços, seja inserindo novidades ou melhorando as funcionalidades já oferecidas. Ou morrem...
+
+#Gestão da Mudança - Conflito: Desenvolvimento; pressionado cada vez mais pelas areas de negócio popr entregas mais rápidas; por outro lado foi beneficiado por ferramentas de automação de build, versionamento, etc..
+Operação; para evitar problemas na operação foram criadas barreiras burocráticas como forma de proteção, cultura de conservação.
+
+#DevOps - Histórico: é uma cultura que visa integrar as equipes de desenvolvimento e operação, visando um aumento da produtividade, garantido a qualidade. 
+
+#DevOps - definição: é um conjunto de boas práticas (cultura), de integração entre o Desenvolvimento e a Operação; Amparada por um conjunto de tecnologias de computação em nuvem. Podemos considerar o DevOps como uma metodologia agil pois torna o processo de produção mais rápido do que o das empresas que usam processos tradicionais de desenvolvimento de software e gerenciamento de infraestrutura; Não existe uma metodologia formal para o DevOps.
+
+#DevOps - Beneficios: entrega/implatação (delivery/deploy) contínuas - aumento da frequencia de lançamentos atraves da automação do processo de lançamento de software, desde a fase de criação à fase de implantação; Agilidade; quanto mais rápido você puder lançar novos recursos e corrigir erros maior será a sua agilidade para responder às necessidades dos clientes e criar vantagem competitiva;
+
+Confiabilidade na operação: garantir a qualidade das atualizações de aplicativos e alterações de infraestrutura para que você possa entregar com confiança em um ritmo mais rápido, sem deixar de manter uma experiencia positiva para os usuarios finais; Escabilidade - operar e gerenciar processos de infraestrutura e desenvolvimento em escala. A automação e a constância ajudam a gerenciar sistemas complexos ou dinamicos com eficiencias e risco reduzido.
+#Colaboração melhorada: Criar equipes mais eficientes sob um modelo cultural de DevOps, que enfatiza valores como propriedade e responsabilidade. As equipes de desenvolvedores e operações colaboram entre si, compartilham muitas responsabilidades e combinam seus fluxos de trabalho. Isso reduz ineficiências e economiza tempo(por exemplo, periodos de trasnferencia reduzidos entre desenvolvedores e operações, escrevendo código que leva em consideração o ambiente em que está sendo executado).
+
+#DevSecOps: em alguns modelos de DevOps, as equipes de controle de qualidade e segurança também podem aumentar sua integração com o desenolvimento, as operações e todo o ciclo de vida dos aplicativos. Quando a segurança é a prioridade de todos em uma equipe de DevOps, isso é denominado às vezes DevSecOps.
+
+#Pilares - CAMS: Culltura/Automação/Medição/Compartilhamento.
+
+#Considerações finais: O desenvolvedor ganha maior controle sobre o ambiente, e a operação maior entendimento sobre os aplicativos. 
